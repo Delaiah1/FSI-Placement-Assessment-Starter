@@ -54,7 +54,6 @@ ccMinusBtn.addEventListener('click', function(){
 })
 
 const sugarPlusBtn = document.querySelector('#add-sugar')
-//console.log(sugarPlusBtn)
 const sugarQty = document.querySelector('#qty-sugar')
 
 sugarPlusBtn.addEventListener('click', function(){
@@ -62,8 +61,9 @@ sugarPlusBtn.addEventListener('click', function(){
     sugarQty.textContent = sugar
 })
 
-
-
-
 const sugarMinusBtn = document.querySelector('#minus-sugar')
-console.log(sugarMinusBtn)
+//console.log(sugarMinusBtn)
+sugarMinusBtn.addEventListener('click', function(){
+    sugar = sugar - 1
+    sugarQty.textContent = sugar
+})
