@@ -20,7 +20,6 @@ const gbQty = document.querySelector('#qty-gb')
 
 const gbMinusBtn = document.querySelector('#minus-gb')
 
-
 // Code to update name display
 credit.textContent = `Created by ${'Delaiah'}`
 
@@ -30,7 +29,6 @@ gbPlusBtn.addEventListener('click', function(){
         gb = gb + 1
         gbQty.textContent = gb
     })
-
     // "-gb"
     gbMinusBtn.addEventListener('click', function(){
         gb = gb - 1
@@ -41,10 +39,20 @@ gbPlusBtn.addEventListener('click', function(){
 
 // TODO: Hook up event listeners for the rest of the buttons
 const ccPlusBtn = document.querySelector('#add-cc')
-console.log(ccPlusBtn)
+const ccQty = document.querySelector('#qty-cc')
+
+ccPlusBtn.addEventListener('click', function(){
+    cc = cc + 1
+    ccQty.textContent = cc
+})
 
 const ccMinusBtn = document.querySelector('#minus-cc')
-console.log(ccMinusBtn)
+//console.log(ccMinusBtn)
+
+ccMinusBtn.addEventListener('click', function(){
+    cc = cc - 1
+    ccQty.textContent = cc
+})
 
 const sugarPlusBtn = document.querySelector('#add-sugar')
 console.log(sugarPlusBtn)
