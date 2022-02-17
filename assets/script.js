@@ -15,6 +15,7 @@ const credit = document.querySelector('#credit')
 // selecting the element with an id of add-gb
 const gbPlusBtn = document.querySelector('#add-gb')
 const gbQty = document.querySelector('#qty-gb')
+const totalQty = document.querySelector('#qty-total')
 
 //minus-gb
 
@@ -28,6 +29,7 @@ credit.textContent = `Created by ${'Delaiah'}`
 gbPlusBtn.addEventListener('click', function(){
         gb = gb + 1
         gbQty.textContent = gb
+        totalQty.textContent = gb + cc + sugar;
     })
     // "-gb"
     gbMinusBtn.addEventListener('click', function(){
@@ -44,6 +46,7 @@ const ccQty = document.querySelector('#qty-cc')
 ccPlusBtn.addEventListener('click', function(){
     cc = cc + 1
     ccQty.textContent = cc
+    totalQty.textContent = gb + cc + sugar;
 })
 
 const ccMinusBtn = document.querySelector('#minus-cc')
@@ -59,10 +62,10 @@ const sugarQty = document.querySelector('#qty-sugar')
 sugarPlusBtn.addEventListener('click', function(){
     sugar = sugar + 1
     sugarQty.textContent = sugar
+    totalQty.textContent = gb + cc + sugar;
 })
 
 const sugarMinusBtn = document.querySelector('#minus-sugar')
-//console.log(sugarMinusBtn)
 sugarMinusBtn.addEventListener('click', function(){
     sugar = sugar - 1
     sugarQty.textContent = sugar
