@@ -35,6 +35,7 @@ gbPlusBtn.addEventListener('click', function(){
     gbMinusBtn.addEventListener('click', function(){
         gb = gb - 1
         gbQty.textContent = gb
+        totalQty.textContent = gb + cc + sugar;
     })
 // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 
@@ -54,6 +55,8 @@ const ccMinusBtn = document.querySelector('#minus-cc')
 ccMinusBtn.addEventListener('click', function(){
     cc = cc - 1
     ccQty.textContent = cc
+    totalQty.textContent = gb + cc + sugar;
+    totalQty.textContent = gb + cc + sugar;
 })
 
 const sugarPlusBtn = document.querySelector('#add-sugar')
@@ -69,4 +72,5 @@ const sugarMinusBtn = document.querySelector('#minus-sugar')
 sugarMinusBtn.addEventListener('click', function(){
     sugar = sugar - 1
     sugarQty.textContent = sugar
+    totalQty.textContent = gb + cc + sugar;
 })
