@@ -19,7 +19,7 @@ const gbQty = document.querySelector('#qty-gb')
 //minus-gb
 
 const gbMinusBtn = document.querySelector('#minus-gb')
-console.log(gbMinusBtn)
+
 
 // Code to update name display
 credit.textContent = `Created by ${'Delaiah'}`
@@ -28,10 +28,14 @@ credit.textContent = `Created by ${'Delaiah'}`
 
 gbPlusBtn.addEventListener('click', function(){
         gb = gb + 1
-        console.log(gb)
         gbQty.textContent = gb
     })
 
+    // "-gb"
+    gbMinusBtn.addEventListener('click', function(){
+        gb = gb - 1
+        gbQty.textContent = gb
+    })
 // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 
 
